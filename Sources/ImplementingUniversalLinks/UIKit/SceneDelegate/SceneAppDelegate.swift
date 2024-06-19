@@ -81,4 +81,34 @@ extension AppDelegate: UIApplicationDelegate {
 // MARK: UIWindowSceneDelegate Conformance
 /* ###################################################################################################################################### */
 extension AppDelegate: UIWindowSceneDelegate {
+    /* ################################################################## */
+    /**
+     Called when the app is foregrounded via a URL.
+     
+     - parameter: The scene instance (ignored).
+     - parameter openURLContexts: The Opening URL contexts (as a set).
+     */
+    func scene(_: UIScene, openURLContexts inURLContexts: Set<UIOpenURLContext>) {
+        for context in inURLContexts {
+            var status: AppStatus = .off
+            
+            if let statusString = context.url.query(),    // Parse out the entire query string. Our implementation requires nothing else.
+               let tempStatus = AppStatus(rawValue: statusString) { // Create an instance of AppStatus, based on the query string.
+                status = tempStatus
+            }
+            
+            currentViewController?.updateUI(status: status) // Force an update of the current screen.
+        }
+    }
+    
+    /* ################################################################## */
+    /**
+     Called when the app is opened via a URL from a "cold start."
+     - parameter: The scene instance.
+     - parameter willConnectTo: The session being connected (ignored).
+     - parameter options: This contains the options, among which, is the URL context.
+     */
+    func scene(_ inScene: UIScene, willConnectTo: UISceneSession, options inConnectionOptions: UIScene.ConnectionOptions) {
+        scene(inScene, openURLContexts: inConnectionOptions.urlContexts)
+    }
 }

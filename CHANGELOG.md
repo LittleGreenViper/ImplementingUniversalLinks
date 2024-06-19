@@ -1,3 +1,7 @@
+**03.url.schemes.2** *June 19, 2024*
+
+- The Scene Delegate Target now has URL Schemes completely operational.
+
 **02.url.schemes.1** *June 19, 2024*
 
 - The Simple App Delegate Target now has URL Schemes completely operational.
