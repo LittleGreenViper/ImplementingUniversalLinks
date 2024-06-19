@@ -48,6 +48,12 @@ struct SwiftUIApp: App {
          */
         WindowGroup {
             ContentView(status: $status)
+                .onOpenURL { inURL in
+                    guard let query = inURL.query(),
+                          let state = AppStatus(rawValue: query)
+                    else { return }
+                    status = state
+                }
         }
     }
 }
