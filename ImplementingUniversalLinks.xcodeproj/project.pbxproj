@@ -13,11 +13,11 @@
 		D47D2B982C1E2FDD004A5A3E /* SimpleAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D2B972C1E2FDD004A5A3E /* SimpleAppDelegate.swift */; };
 		D47D2B9C2C1E2FDD004A5A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D2B9B2C1E2FDD004A5A3E /* ViewController.swift */; };
 		D47D2BA12C1E2FDE004A5A3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47D2BA02C1E2FDE004A5A3E /* Assets.xcassets */; };
-		D4B7D9E42C2351FC004578DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47D2BA22C1E2FDE004A5A3E /* LaunchScreen.storyboard */; };
 		D4CF0D7A2C2339A300D77183 /* SceneDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CF0D782C23399100D77183 /* SceneDelegate.storyboard */; };
 		D4DCB3AE2C1E32EE0020DF90 /* SceneAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DCB3AD2C1E32EE0020DF90 /* SceneAppDelegate.swift */; };
 		D4DCB3B02C1E33510020DF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D2B9B2C1E2FDD004A5A3E /* ViewController.swift */; };
 		D4DCB3B22C1E33670020DF90 /* SimpleAppDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47D2B9D2C1E2FDD004A5A3E /* SimpleAppDelegate.storyboard */; };
+		D4DCB3B32C1E336C0020DF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47D2BA22C1E2FDE004A5A3E /* LaunchScreen.storyboard */; };
 		D4DCB3B42C1E336C0020DF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47D2BA22C1E2FDE004A5A3E /* LaunchScreen.storyboard */; };
 		D4DCB3C02C1E37030020DF90 /* SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DCB3BF2C1E37030020DF90 /* SwiftUIApp.swift */; };
 		D4DCB3C22C1E37030020DF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DCB3C12C1E37030020DF90 /* ContentView.swift */; };
@@ -298,9 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B7D9E42C2351FC004578DE /* LaunchScreen.storyboard in Resources */,
 				D47D2BA12C1E2FDE004A5A3E /* Assets.xcassets in Resources */,
 				D4DCB3B22C1E33670020DF90 /* SimpleAppDelegate.storyboard in Resources */,
+				D4DCB3B32C1E336C0020DF90 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
