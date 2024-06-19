@@ -60,4 +60,26 @@ extension AppDelegate: UIApplicationDelegate {
      - returns: True (always).
      */
     func application(_: UIApplication, didFinishLaunchingWithOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool { true }
+    
+    /* ################################################################## */
+    /**
+     Called when the app has been opened from a URL. This applies both for "cold start," and foregrounding.
+     
+     - parameter: The application instance (ignored).
+     - parameter open: The URL that was sent to the app.
+     - parameter options: The options provided with the launch. We ignore this, as well.
+     - returns: True (always).
+     */
+    func application(_: UIApplication, open inURL: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        var status: AppStatus = .off
+        
+        if let statusString = inURL.query(),    // Parse out the entire query string. Our implementation requires nothing else.
+           let tempStatus = AppStatus(rawValue: statusString) { // Create an instance of AppStatus, based on the query string.
+            status = tempStatus
+        }
+        
+        currentViewController?.updateUI(status: status) // Force an update of the current screen.
+
+        return true
+    }
 }
