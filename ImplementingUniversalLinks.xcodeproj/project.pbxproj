@@ -104,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				D471EDFD2C24DD60004B290B /* iul-test.html */,
+				D471EDFC2C24DD4C004B290B /* Universal-App.entitlements */,
+				D471EDFB2C24DD4C004B290B /* Universal-Scene.entitlements */,
+				D471EDFA2C24D452004B290B /* Universal-SwiftUI.entitlements */,
 				D47016052C1F509D00E25616 /* README.md */,
 				D47016042C1F509D00E25616 /* CHANGELOG.md */,
 				D47016072C1F509D00E25616 /* CODEOWNERS */,
@@ -151,9 +154,6 @@
 		D47D2B8B2C1E2FDD004A5A3E = {
 			isa = PBXGroup;
 			children = (
-				D471EDFC2C24DD4C004B290B /* Universal-App.entitlements */,
-				D471EDFB2C24DD4C004B290B /* Universal-Scene.entitlements */,
-				D471EDFA2C24D452004B290B /* Universal-SwiftUI.entitlements */,
 				D470160C2C1F519C00E25616 /* Sources */,
 				D47016032C1F507800E25616 /* Meta */,
 				D47D2B952C1E2FDD004A5A3E /* Products */,
