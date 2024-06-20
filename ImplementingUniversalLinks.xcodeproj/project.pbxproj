@@ -38,6 +38,10 @@
 		D47016082C1F509D00E25616 /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
 		D47016092C1F509D00E25616 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D470160A2C1F509D00E25616 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D471EDFA2C24D452004B290B /* Universal-SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Universal-SwiftUI.entitlements"; sourceTree = "<group>"; };
+		D471EDFB2C24DD4C004B290B /* Universal-Scene.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Universal-Scene.entitlements"; sourceTree = "<group>"; };
+		D471EDFC2C24DD4C004B290B /* Universal-App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Universal-App.entitlements"; sourceTree = "<group>"; };
+		D471EDFD2C24DD60004B290B /* iul-test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "iul-test.html"; sourceTree = "<group>"; };
 		D475519D2C2492E50039EA4C /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
 		D475519F2C2495DF0039EA4C /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
 		D47551A32C2496300039EA4C /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		D47016032C1F507800E25616 /* Meta */ = {
 			isa = PBXGroup;
 			children = (
+				D471EDFD2C24DD60004B290B /* iul-test.html */,
 				D47016052C1F509D00E25616 /* README.md */,
 				D47016042C1F509D00E25616 /* CHANGELOG.md */,
 				D47016072C1F509D00E25616 /* CODEOWNERS */,
@@ -146,6 +151,9 @@
 		D47D2B8B2C1E2FDD004A5A3E = {
 			isa = PBXGroup;
 			children = (
+				D471EDFC2C24DD4C004B290B /* Universal-App.entitlements */,
+				D471EDFB2C24DD4C004B290B /* Universal-Scene.entitlements */,
+				D471EDFA2C24D452004B290B /* Universal-SwiftUI.entitlements */,
 				D470160C2C1F519C00E25616 /* Sources */,
 				D47016032C1F507800E25616 /* Meta */,
 				D47D2B952C1E2FDD004A5A3E /* Products */,
@@ -540,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Universal-App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P53V4JS928;
@@ -572,6 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Universal-App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P53V4JS928;
@@ -605,6 +615,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Universal-Scene.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P53V4JS928;
@@ -639,6 +650,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Universal-Scene.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P53V4JS928;
@@ -671,6 +683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Universal-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -704,6 +717,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Universal-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";

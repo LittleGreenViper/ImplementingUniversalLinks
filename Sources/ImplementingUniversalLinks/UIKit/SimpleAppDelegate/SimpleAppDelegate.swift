@@ -79,7 +79,24 @@ extension AppDelegate: UIApplicationDelegate {
         }
         
         currentViewController?.updateUI(status: status) // Force an update of the current screen.
-
+        
         return true
+    }
+    
+    /* ################################################################## */
+    /**
+     Called when the app has been opened from a Universal Link URL. This applies both for "cold start," and foregrounding.
+     
+     - parameter inApplication: The application instance
+     - parameter continue: The user activity that is being continued (Open with URL)
+     - parameter restorationHandler: An optional restoration handler (ignored)
+     - returns: True, if we were able to parse and use the opening URL.
+     */
+    func application(_ inApplication: UIApplication, continue inUserActivity: NSUserActivity, restorationHandler: @escaping ([any UIUserActivityRestoring]?) -> Void) -> Bool {
+        guard inUserActivity.activityType == NSUserActivityTypeBrowsingWeb,
+              let url = inUserActivity.webpageURL
+        else { return false }
+     
+        return application(inApplication, open: url)
     }
 }
