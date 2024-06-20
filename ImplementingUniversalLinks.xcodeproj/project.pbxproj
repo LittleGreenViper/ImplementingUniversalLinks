@@ -38,6 +38,9 @@
 		D47016082C1F509D00E25616 /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
 		D47016092C1F509D00E25616 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D470160A2C1F509D00E25616 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D475519D2C2492E50039EA4C /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
+		D475519F2C2495DF0039EA4C /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
+		D47551A32C2496300039EA4C /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
 		D47D2B942C1E2FDD004A5A3E /* Universal-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universal-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47D2B972C1E2FDD004A5A3E /* SimpleAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppDelegate.swift; sourceTree = "<group>"; };
 		D47D2B9B2C1E2FDD004A5A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D46D6CBE2C20E9AA0006005E /* index.html */,
+				D475519E2C2492E50039EA4C /* .well-known */,
 			);
 			path = iul1;
 			sourceTree = "<group>";
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D46D6CC02C20E9AA0006005E /* index.html */,
+				D47551A02C2495DF0039EA4C /* .well-known */,
 			);
 			path = iul2;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D46D6CC22C20E9AA0006005E /* index.html */,
+				D47551A42C2496300039EA4C /* .well-known */,
 			);
 			path = iul3;
 			sourceTree = "<group>";
@@ -111,6 +117,30 @@
 				D47D2B962C1E2FDD004A5A3E /* ImplementingUniversalLinks */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		D475519E2C2492E50039EA4C /* .well-known */ = {
+			isa = PBXGroup;
+			children = (
+				D475519D2C2492E50039EA4C /* apple-app-site-association */,
+			);
+			path = ".well-known";
+			sourceTree = "<group>";
+		};
+		D47551A02C2495DF0039EA4C /* .well-known */ = {
+			isa = PBXGroup;
+			children = (
+				D475519F2C2495DF0039EA4C /* apple-app-site-association */,
+			);
+			path = ".well-known";
+			sourceTree = "<group>";
+		};
+		D47551A42C2496300039EA4C /* .well-known */ = {
+			isa = PBXGroup;
+			children = (
+				D47551A32C2496300039EA4C /* apple-app-site-association */,
+			);
+			path = ".well-known";
 			sourceTree = "<group>";
 		};
 		D47D2B8B2C1E2FDD004A5A3E = {

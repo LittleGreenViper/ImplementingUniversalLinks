@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+                "appIDs": ["P53V4JS928.org.littlegreenviper.Universal-SwiftUI"],
+                "components": [{
+                    "/": "*",
+                    "comment": "Any call can go to the app."
+                }
+            ]}
+        ]
+    }
+}
