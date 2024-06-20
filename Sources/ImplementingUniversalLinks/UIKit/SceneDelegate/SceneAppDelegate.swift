@@ -111,25 +111,4 @@ extension AppDelegate: UIWindowSceneDelegate {
     func scene(_ inScene: UIScene, willConnectTo: UISceneSession, options inConnectionOptions: UIScene.ConnectionOptions) {
         scene(inScene, openURLContexts: inConnectionOptions.urlContexts)
     }
-    
-    /* ################################################################## */
-    /**
-     Called when the app is opened via a URL (and launched).
-     - parameter: The scene instance (ignored).
-     - parameter continue: The activity being continued.
-     */
-    func scene(_: UIScene, continue inUserActivity: NSUserActivity) {
-        guard inUserActivity.activityType == NSUserActivityTypeBrowsingWeb,
-              let url = inUserActivity.webpageURL
-        else { return }
-
-        var status: AppStatus = .off
-        
-        if let statusString = url.query(),    // Parse out the entire query string. Our implementation requires nothing else.
-           let tempStatus = AppStatus(rawValue: statusString) { // Create an instance of AppStatus, based on the query string.
-            status = tempStatus
-        }
-        
-        currentViewController?.updateUI(status: status) // Force an update of the current screen.
-    }
 }
