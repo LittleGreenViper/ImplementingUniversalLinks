@@ -1,6 +1,10 @@
-**07.universal.links.epilogue** *September 3, 2024*
+**08.universal.links.epilogue** *September 3, 2024*
 
 - Added code to "fail" to use activities, if the urlContext was not provided.
+
+**07.complete.solution** *June 20, 2024*
+
+- The complete solution.
 
 **06.universal.links.1** *June 20, 2024*
 
