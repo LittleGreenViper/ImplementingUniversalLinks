@@ -109,9 +109,18 @@ extension AppDelegate: UIWindowSceneDelegate {
      - parameter options: This contains the options, among which, is the URL context.
      */
     func scene(_ inScene: UIScene, willConnectTo: UISceneSession, options inConnectionOptions: UIScene.ConnectionOptions) {
-        scene(inScene, openURLContexts: inConnectionOptions.urlContexts)
+        guard let url = inConnectionOptions.userActivities.first?.webpageURL ?? inConnectionOptions.urlContexts.first?.url else { return }
+        
+        var status: AppStatus = .off
+        
+        if let statusString = url.query(),
+           let tempStatus = AppStatus(rawValue: statusString) {
+            status = tempStatus
+        }
+        
+        currentViewController?.updateUI(status: status) // Force an update of the current screen.
     }
-    
+
     /* ################################################################## */
     /**
      Called when the app is opened via a URL (and launched).
